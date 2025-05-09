@@ -11,13 +11,13 @@ spring:
   topics:
     logs-topic: logs
     logs-group-id: logs_group_id
- liquibase:
-   enabled: true
-   url: jdbc:cassandra://127.0.0.1:9042/story_helper?compliancemode=Liquibase&localdatacenter=datacenter1
-   change-log: /db/changelog.xml
-   driver-class-name: com.ing.data.cassandra.jdbc.CassandraDriver
-   changeLogFile: /db/changelog.xml
-
+  liquibase:
+    enabled: true
+    url: jdbc:cassandra://127.0.0.1:9042/story_helper?compliancemode=Liquibase&localdatacenter=datacenter1
+    change-log: /db/changelog.xml
+    driver-class-name: com.ing.data.cassandra.jdbc.CassandraDriver
+    changeLogFile: /db/changelog.xml
+    
 server:
   port: 8090
   servlet:
